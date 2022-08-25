@@ -648,7 +648,7 @@ it('should increment count', () => {
   expect(result.current.count).toBe(1);
 
   act(() => {
-    result.increment();
+    result.current.increment();
   });
 
   expect(result.current.count).toBe(2);
